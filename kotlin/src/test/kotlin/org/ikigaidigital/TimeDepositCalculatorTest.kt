@@ -8,7 +8,7 @@ class TimeDepositCalculatorTest {
     fun calculateInterest_Test() {
         val calc = TimeDepositCalculator()
         val plans = listOf(
-            TimeDeposit("basic", 100000.00, 45)
+            TimeDeposit("basic", 1234567.00, 45)
         )
         calc.calculateInterest(plans)
         Assertions.assertThat(1).isEqualTo(1)

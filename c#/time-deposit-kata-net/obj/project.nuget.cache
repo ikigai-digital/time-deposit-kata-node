@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "2lDJZpobJmyZT3uPBXQ24IQlZqqjNsASfnc22EdphQYERK7ycLE1Zx8P510tsSbVYyZA1gIiStnUVYwsCzYJNw==",
+  "success": true,
+  "projectFilePath": "/Users/thch/Projects/time-deposit-kata-net/time-deposit-kata-net/time-deposit-kata-net.csproj",
+  "expectedPackageFiles": [
+    "/Users/thch/.nuget/packages/microsoft.aspnetcore.app.ref/3.1.10/microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "/Users/thch/.nuget/packages/microsoft.netcore.app.host.osx-x64/3.1.26/microsoft.netcore.app.host.osx-x64.3.1.26.nupkg.sha512",
+    "/Users/thch/.nuget/packages/microsoft.netcore.app.ref/3.1.0/microsoft.netcore.app.ref.3.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}
