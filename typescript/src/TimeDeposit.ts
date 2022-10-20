@@ -1,11 +1,11 @@
 export class TimeDeposit {
-  public n: string
-  public b: number
+  public planType: string
+  public balance: number
   public days: number
 
-  constructor(n: string, b: number, days: number) {
-    this.n = n
-    this.b = b
+  constructor(planType: string, balance: number, days: number) {
+    this.planType = planType;
+    this.balance = balance;
     this.days = days
   }
 }

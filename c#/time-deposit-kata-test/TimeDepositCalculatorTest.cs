@@ -20,9 +20,9 @@ namespace time_deposit_kata_test
             {
                 new TimeDeposit
                 {
-                    n = "basic",
-                    b = 1234567,
-                    days = 45
+                    PlanType = "basic",
+                    Balance = 1234567,
+                    Days = 45
                 }
             };
             calculator.CalculateInterest(plans);

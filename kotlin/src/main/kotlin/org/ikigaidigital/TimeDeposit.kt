@@ -1,7 +1,7 @@
 package org.ikigaidigital
 
-class TimeDeposit(
-    val n: String,
-    var b: Double,
+data class TimeDeposit(
+    val planType: String,
+    var balance: Double,
     val days: Int
 )

@@ -4,3 +4,7 @@ target/
 bin/
 obj/
 __pycache__/
+.vs/
+.idea/
+package-lock.json
+.vscode/

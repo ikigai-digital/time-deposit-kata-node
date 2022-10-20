@@ -5,39 +5,35 @@ namespace time_deposit_kata_net
 {
     public class TimeDepositCalculator
     {
-        public void CalculateInterest(List<TimeDeposit> xs)
+        public void CalculateInterest(List<TimeDeposit> temps)
         {
-            for (int i = 0; i < xs.Count; i++)
+            for (int i = 0; i < temps.Count; i++)
             {
-                double a = 0;
+                double interest = 0;
 
-                if (xs[i].days > 30)
+                if (temps[i].Days > 30)
                 {
-                    if (xs[i].n == "student")
+                    if (temps[i].PlanType == "student")
                     {
-                        if (xs[i].days < 366)
+                        if (temps[i].Days < 366)
                         {
-                            a += xs[i].b * 0.03 / 12;
+                            interest += temps[i].Balance * 0.03 / 12;
                         }
                     }
-                    else if (xs[i].n == "premium")
+                    else if (temps[i].PlanType == "premium")
                     {
-                        if (xs[i].days > 45)
+                        if (temps[i].Days > 45)
                         {
-                            a += xs[i].b * 0.05 / 12;
+                            interest += temps[i].Balance * 0.05 / 12;
                         }
                     }
-                    else if (xs[i].n == "internal")
+                    else if (temps[i].PlanType == "basic")
                     {
-                        a += xs[i].b * 0.1 / 12;
-                    }
-                    else if (xs[i].n == "basic")
-                    {
-                        a += xs[i].b * 0.01 / 12;
+                        interest += temps[i].Balance * 0.01 / 12;
                     }
                 }
 
-                xs[i].b += Math.Round(a, 2);
+                temps[i].Balance += Math.Round(interest, 2);
             }
         }
     }

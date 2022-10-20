@@ -3,9 +3,9 @@ namespace time_deposit_kata_net
 {
     public class TimeDeposit
     {
-        public string n;
-        public double b;
-        public int days;
+        public string PlanType { get; set; }
+        public double Balance { get; set; }
+        public int Days { get; set; }
     }
 }
 
