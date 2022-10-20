@@ -3,7 +3,7 @@
 
 It's unfortunate that the junior developer has left the company without handing his work over to anyone. And what is even more unfortunate is that you have been assigned to take over the code that he left behind. 
 
-We were able to savage only a portion of the business requirements, but we're not sure if the existing implementation has covered all the flows.
+We were able to salvage only a portion of the business requirements, but we're not sure if the existing implementation has covered all the flows.
 
 - The system should calculate the monthly interest based on the account type.
 - No interest will be added to any time deposit plans for the first 30 days. 
