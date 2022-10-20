@@ -6,26 +6,24 @@ export class TimeDepositCalculator {
       let a = 0
 
       if (xs[i].days > 30) {
-        if (xs[i].n === 'student') {
+        if (xs[i].planType === 'student') {
           if (xs[i].days < 366) {
-            a += (xs[i].b * 0.03) / 12
+            a += (xs[i].balance * 0.03) / 12
           }
-        } else if (xs[i].n === 'premium') {
+        } else if (xs[i].planType === 'premium') {
           if (xs[i].days > 45) {
-            a += (xs[i].b * 0.05) / 12
+            a += (xs[i].balance * 0.05) / 12
           }
-        } else if (xs[i].n === 'internal') {
-          a += (xs[i].b * 0.1) / 12
-        } else if (xs[i].n === 'basic') {
-          a += (xs[i].b * 0.01) / 12
+        } else if (xs[i].planType === 'basic') {
+          a += (xs[i].balance * 0.01) / 12
         }
       }
 
       const a2d = Math.round((a + Number.EPSILON) * 100) / 100
 
-      xs[i].b += a2d
+      xs[i].balance += a2d
     }
 
     return xs
-  }
+  };
 }
