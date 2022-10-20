@@ -7,7 +7,7 @@ We were able to salvage only a portion of the business requirements, but we're n
 
 - The system should calculate the monthly interest based on the account type.
 - No interest will be added to any time deposit plans for the first 30 days. 
-- There are 4 types of time deposit plans available within the bank: basic, student, premium, and internal
+- There are 4 types of time deposit plans available within the bank: basic, student, and premium
   - basic plan: 1%
   - student plan: 3%
   - premium plan: 5%
