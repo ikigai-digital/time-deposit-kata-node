@@ -18,3 +18,5 @@ We'd like for you to refactor the solution and ensure that the implementation me
 Limitations: 
 - You may not add any additional methods to the TimeDeposit class
 - You may not modify the calculateInterest method signature
+
+PS: For the sake of time, you should assume that all inputs are valid. Please treat this as an actual assignment on the project and apply all the best practices that you know of. 
