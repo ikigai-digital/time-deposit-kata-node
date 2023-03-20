@@ -15,7 +15,7 @@ class TimeDepositCalculator:
             if td.days > 30:
                 if td.planType == 'student':
                     if td.days < 366:
-                        interest += (td.balance * 0.3)/12
+                        interest += (td.balance * 0.03)/12
                 elif td.planType == 'premium':
                     if td.days > 45:
                         interest += (td.balance * 0.05)/12
