@@ -10,15 +10,15 @@ public class TimeDepositCalculator {
             double interest = 0;
 
             if (xs.get(i).getDays() > 30) {
-                if (xs.get(i).getPlanType() == "student") {
+                if (xs.get(i).getPlanType().equals("student")) {
                     if (xs.get(i).getDays() < 366) {
                         interest += xs.get(i).getBalance() * 0.03 / 12;
                     }
-                } else if (xs.get(i).getPlanType() == "premium") {
+                } else if (xs.get(i).getPlanType().equals("premium")) {
                     if (xs.get(i).getDays() > 45) {
                         interest += xs.get(i).getBalance() * 0.05 / 12;
                     }
-                } else if (xs.get(i).getPlanType() == "basic") {
+                } else if (xs.get(i).getPlanType().equals("basic")) {
                     interest += xs.get(i).getBalance() * 0.01 / 12;
                 }
             }
