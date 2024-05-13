@@ -20,5 +20,6 @@ Limitations:
 - You may not modify the calculateInterest method signature
 
 The TimeDeposit class contains all the necessary information to evaluate the applicable interest rate. If additional criteria are to be considered, we expect them to be added to the TimeDeposit class.
+Do keep one thing in mind, we expect the criterias in evaluating the interest rate to become extremely complicated as the product grow down the line, so please be sure your design is extensible. 
 
 PS: For the sake of time, you should assume that all inputs are valid. Please treat this as an actual assignment on the project and apply all the best practices that you know of. 
