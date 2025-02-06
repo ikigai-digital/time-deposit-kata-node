@@ -6,12 +6,10 @@ class TimeDeposit:
 
 
 class TimeDepositCalculator:
-    def __init__(self, xs):
-        self.xs = xs
 
-    def calculateInterest(self):
+    def calculateInterest(self,xs):
         interest = 0
-        for td in self.xs:
+        for td in xs:
             if td.days > 30:
                 if td.planType == 'student':
                     if td.days < 366:
@@ -22,4 +20,4 @@ class TimeDepositCalculator:
                 elif td.planType == 'basic':
                     interest += (td.balance * 0.01) / 12
             td.balance = round(td.balance + ((interest * 100) / 100), 2)
-        return self.xs
+
