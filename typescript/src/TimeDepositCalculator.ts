@@ -23,7 +23,5 @@ export class TimeDepositCalculator {
 
       xs[i].balance += a2d
     }
-
-    return xs
   };
 }
